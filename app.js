@@ -3,7 +3,7 @@ var app = require('express')();
 port = process.env.PORT || 3000
 
 app.post('/112', function (req, res) {
-  res.status(201).json({"message": "You will live!"});
+  res.status(201).json({"message": true});
 });
 
 var server = app.listen(port)
